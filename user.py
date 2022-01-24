@@ -19,3 +19,11 @@ class User:
         delete_user method for deleting user in the user list
         '''
         User.user_list.remove(self)
+
+    @classmethod
+    def display_users(cls):
+        '''
+        diplays_users method returns a list of all users in the user list
+        '''
+        return.cls.user_list
+        
