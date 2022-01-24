@@ -25,5 +25,5 @@ class User:
         '''
         diplays_users method returns a list of all users in the user list
         '''
-        return.cls.user_list
-        
+        return cls.user_list
+

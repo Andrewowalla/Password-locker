@@ -20,3 +20,10 @@ class Credentials:
         delete_credentials method deletes/removes credentials objects in the credentials list
         '''
         Credentials.credentials_list.remove(self)
+
+    @classmethod
+    def display_credentials(cls):
+        '''
+        display_credentials method that displays credentials in the credentials list
+        '''
+        return cls.credentials_list
