@@ -5,3 +5,5 @@ class TestUser(unittest.Testcase):
     '''
     Test class that defines test cases for the user class behaviours
     '''
+
+    
