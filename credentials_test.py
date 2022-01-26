@@ -19,3 +19,14 @@ class TestCredentials(unittest.TestCase):
 
         Credentials.credentials_list = []
 
+    def test_delete_credentials(self):
+        '''test case to check if credentials have been deleted from the credentials list'''
+
+        self.new_credentials.save_credentials()
+        test_credentials = Credentials("Youtube", "Mazlaowalla", "des0708")
+
+        test_credentials.save_credentials()
+
+        self.new_credentials.delete_credentials()
+        self.assertEqual(len(Credentials.credentials_list), 1)
+
