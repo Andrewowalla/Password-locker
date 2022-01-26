@@ -1,0 +1,1 @@
+class TestCredentials(unittest.TestCase):
