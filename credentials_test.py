@@ -78,3 +78,6 @@ class TestCredentials(unittest.TestCase):
         username_exists = Credentials.username_exists("Mazlaowalla")
 
         self.assertTrue(username_exists)
+
+if __name__ == '__main__':
+    unittest.main()
