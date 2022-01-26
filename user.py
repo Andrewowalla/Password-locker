@@ -27,3 +27,15 @@ class User:
         '''
         return cls.user_list
 
+    @classmethod
+    def verified_users(cls, username, password):
+        '''
+        method that verifies users that already have an account 
+        '''
+
+        for users in cls.user_list:
+            if users.username == username and users.password == password:
+                return True
+            else:
+                return False
+
