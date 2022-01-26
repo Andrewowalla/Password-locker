@@ -1,3 +1,6 @@
+import unittest
+from credentials import Credentials #importing the credentials class
+
 class TestCredentials(unittest.TestCase):
     def setUp(self):
         '''
@@ -29,4 +32,22 @@ class TestCredentials(unittest.TestCase):
 
         self.new_credentials.delete_credentials()
         self.assertEqual(len(Credentials.credentials_list), 1)
+
+    def test_display_credentials(self):
+        ''' 
+        test case to test whether credentials have been displayed 
+        '''
+
+        self.assertEqual(Credentials.display_credentials(), Credentials.credentials_list)
+
+    def test_save_multiple_credentials(self):
+        ''' 
+        test case to test whether multiple credentials have been saved 
+        '''
+
+        self.new_credentials.save_credentials()
+        test_multiple = Credentials("Youtube", "Mazlaowalla", "des0708")
+
+        test_multiple.save_credentials()
+        self.assertEqual(len(Credentials.credentials_list), 2)
 
