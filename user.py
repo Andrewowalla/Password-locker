@@ -5,7 +5,7 @@ class User:
     user_list = [] #empty user list
 
     def __init__(self, username, password):
-        self.userName = userName
+        self.username = username
         self.password = password 
 
     def save_user(self):
@@ -39,4 +39,4 @@ class User:
             else:
                 return False
     
-    
+
