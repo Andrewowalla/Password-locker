@@ -3,7 +3,9 @@
 ## Description
 It is an application that will help us manage our passwords and even generate new passwords for us.
 ## Setup/Installation Requirements
-* Its free for use
+* There is an authentication system that enables a user to log into their account and view their credentials.
+* store my already existing account username and password in the application.
+* delete a credentials account that is no longer needed in the application.
 * in a simple
 * easy-to-understand
 ## Known Bugs
