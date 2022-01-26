@@ -49,4 +49,12 @@ class Credentials:
                 return True
         
         return False
-    
+        
+    @classmethod
+    def copy_password(cls, account):
+        '''
+        a  method for copying credentials on the clipboard
+        '''
+        found_credentials = Credentials.find_by_account(account)
+        pyperclip.copy(found_credentials.password)
+
