@@ -27,3 +27,14 @@ class Credentials:
         display_credentials method that displays credentials in the credentials list
         '''
         return cls.credentials_list
+
+    @classmethod
+    def find_by_account(cls, account):
+        '''
+        find_by_account method that searches objects in the credentials list by account 
+        '''
+
+        for credentials in cls.credentials_list:
+            if credentials.account == account:
+                return credentials
+    
