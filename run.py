@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 from user import User
 from credentials import Credentials
+import string
+import random
 
 def create_account(username, password):
     ''' 
@@ -215,7 +217,7 @@ def main():
                         print("Type your password")
                         credential_password = input().lower()
 
-                        kuokoa_credentials(create_credentials(
+                        save_credentials(create_credentials(
                             credential_name, credential_password))
                         print('\n')
                         print(

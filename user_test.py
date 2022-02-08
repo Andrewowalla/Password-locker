@@ -1,7 +1,7 @@
 import unittest
 from user import User #importin the user class
 
-class TestUser(unittest.Testcase):
+class TestUser(unittest.TestCase):
     '''
     Test class that defines test cases for the user class behaviours
     '''
@@ -15,10 +15,10 @@ class TestUser(unittest.Testcase):
         '''
         test_init to test if the object is initialized properly
         '''
-        self.assertEqual(self.new_user.username"Mazlaowalla")
-        self.assertEqual(self.new_user.password"des0708")
+        self.assertEqual(self.new_user.username,"Mazlaowalla")
+        self.assertEqual(self.new_user.password,"des0708")
 
-     def test_save_user(self):
+    def test_save_user(self):
         '''
         test_save_user test case to check whether a new user has been saved into the user list
         '''
@@ -53,5 +53,5 @@ class TestUser(unittest.Testcase):
 
         self.assertEqual(User.display_users(), User.user_list)
 
-if __name__ = '__main__':
+if __name__ == '__main__':
     unittest.main()
